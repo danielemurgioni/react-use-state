@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+/* main */
+
 .btn {
   background-color: rgb(103, 176, 255);
   padding: 10px;
   border: none;
+}
+
+#language-container {
+  border: 2px solid black;
 }
 
 /* layout */
@@ -21,6 +27,10 @@
 
 .me-20 {
   margin-right: 20px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
 }
 
 /* padding */

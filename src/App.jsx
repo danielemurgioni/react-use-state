@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Buttons from './components/Buttons';
+import LanguageCard from './components/LanguageCard';
 
 const languages = [
   {
@@ -34,7 +35,9 @@ const languages = [
   }
 ];
 
-const renderButtons = languages.map((language) => (<Buttons key={`language-${id}`} title={language.title} />))
+const renderButtons = languages.map((language) => (<Buttons key={`button-${language.id}`} title={language.title} />));
+
+const renderLanguageCard = languages.map((language) => (<LanguageCard key={`paragraf-${language.id}`} title={language.title} description={language.description} />));
 
 function App() {
   return (
@@ -46,7 +49,12 @@ function App() {
       </header>
       <main>
         <div className="container p-20">
-          {renderButtons}
+          <div id="btn-container" className='mb-50'>
+            {renderButtons}
+          </div>
+          <div id="language-container" className='p-20'>
+            {renderLanguageCard}
+          </div>
         </div>
       </main>
     </>
