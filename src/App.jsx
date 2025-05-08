@@ -1,6 +1,9 @@
-import { useState } from 'react'
+/* components */
 import Buttons from './components/Buttons';
 import LanguageCard from './components/LanguageCard';
+
+/* useState */
+import { useState } from 'react'
 
 const languages = [
   {
