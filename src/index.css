@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: rgb(103, 176, 255);
+  padding: 10px;
+  border: none;
+}
+
+/* layout */
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* margin */
+
+.me-20 {
+  margin-right: 20px;
+}
+
+/* padding */
+
+.p-20 {
+  padding: 20px;
+}
+
+/* bg */
+
+.bg-grey {
+  background-color: rgb(195, 195, 195);
+}

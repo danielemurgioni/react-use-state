@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Buttons from './components/Buttons';
 
 const languages = [
   {
@@ -33,9 +34,22 @@ const languages = [
   }
 ];
 
+const renderButtons = languages.map((language) => (<Buttons key={`language-${id}`} title={language.title} />))
+
 function App() {
   return (
-    <div>hello</div>
+    <>
+      <header>
+        <div className='p-20 bg-grey'>
+          <h1>Learn Web Development</h1>
+        </div>
+      </header>
+      <main>
+        <div className="container p-20">
+          {renderButtons}
+        </div>
+      </main>
+    </>
   )
 }
 
